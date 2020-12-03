@@ -7,7 +7,6 @@ const informacoesClientes = [
     cpf: 28875539081,
     nome: "Agnaldo",
   },
-  
 ];
 
 const corpoTabela = document.querySelector("[data-conteudo-tabela]");
