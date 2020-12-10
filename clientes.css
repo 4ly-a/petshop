@@ -1,6 +1,44 @@
-.navbar-brand, .nav-link {
-    text-align: center;
-    font-family: "Pacifico";
-    font-size: 40px;
+.navbar-brand,
+.nav-link {
+  text-align: center;
+  font-family: "Pacifico";
+  font-size: 40px;
 }
 
+th a {
+  text-decoration: none;
+  color: #fff;
+  background: rgb(11, 128, 182);
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+th a:hover {
+  background: #fff;
+  text-decoration: none;
+  color: rgb(11, 128, 182);
+}
+
+form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: right;
+}
+
+form input {
+  outline: none;
+  margin-left: 1em;
+  margin-bottom: 2em;
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.363);
+}
+
+form input:focus {
+  /* box-shadow: 0px 0px 10px 5px rgba(7, 92, 149, 0.356); */
+  border: 5px solid rgba(11, 157, 255, 0.842);
+}
