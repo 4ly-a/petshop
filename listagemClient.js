@@ -8,9 +8,10 @@ const exibeCliente = (cpf, nome) => {
   `;
   linha.innerHTML = conteudoLinha;
   return linha;
-  //sempre retorne :>
 };
 
-informacoesClientes.forEach((indice) => {
-  corpoTabela.appendChild(exibeCliente(indice.cpf, indice.nome));
+listarClientes().then((exibe) => {
+  exibe.forEach((indice) => {
+    corpoTabela.appendChild(exibeCliente(indice.cpf, indice.nome));
+  });
 });
