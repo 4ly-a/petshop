@@ -12,6 +12,6 @@ const exibeCliente = (cpf, nome) => {
 
 listarClientes().then((exibe) => {
   exibe.forEach((indice) => {
-    corpoTabela.appendChild(exibeCliente(indice.cpf, indice.nome));
+    return corpoTabela.appendChild(exibeCliente(indice.cpf, indice.nome))
   });
 });
