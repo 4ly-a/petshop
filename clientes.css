@@ -28,6 +28,11 @@ form {
   text-align: right;
 }
 
+form label {
+  color: #fff;
+  font-weight: bolder;
+}
+
 form input {
   outline: none;
   margin-left: 1em;
@@ -35,10 +40,49 @@ form input {
   padding: 1em;
   border-radius: 10px;
   border: none;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.363);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.226);
 }
 
 form input:focus {
-  /* box-shadow: 0px 0px 10px 5px rgba(7, 92, 149, 0.356); */
-  border: 5px solid rgba(11, 157, 255, 0.842);
+  box-shadow: 0px 0px 5px 5px rgba(7, 92, 149, 0.356);
+}
+
+.formButton {
+  position: absolute;
+  left: 45%;
+  border: none;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  background-color: rgb(20, 147, 206);
+  color: #fff;
+  border-radius: 7px;
+  outline: none;
+  transition: 0.5s;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
+}
+
+.formButton:hover {
+  outline: none;
+  background: rgb(18, 126, 177);
+}
+
+.backButton {
+  position: absolute;
+  right: 0;
+  margin-right: 2em;
+  top: 0;
+  margin-top: 0.9em;
+  border: none;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid blue;
+}
+
+.cadastroBody {
+  background: url("./img/2.jpg");
+  background-size: cover;
 }
