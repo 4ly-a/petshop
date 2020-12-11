@@ -16,16 +16,13 @@ const cadastrarClientes = (nome, cpf) => {
     cpf: cpf,
   });
 
-  return fetch(
-    "http://localhost:4000/clientes/cliente",
-    {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: Json,
-    }.then((resp) => {
-      return resp.body;
-    })
-  );
+  return fetch("http://localhost:4000/clientes/cliente", {
+    method: "POST",
+    headers: {
+      "Content-type": "application/json",
+    },
+    body: Json,
+  }).then((resp) => {
+    return resp.body;
+  });
 };
